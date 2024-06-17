@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投资计算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <h1>投资计算器</h1>
+            <div class="input-group">
+                <label for="institution">机构/基金/股票/项目</label>
+                <input type="text" id="institution">
+            </div>
+            <div class="input-group">
+                <label for="start-date">开始时间</label>
+                <input type="date" id="start-date">
+            </div>
+            <div class="input-group">
+                <label for="end-date">结束时间</label>
+                <input type="date" id="end-date">
+            </div>
+            <div class="input-group">
+                <label for="past-value">过去值</label>
+                <input type="number" id="past-value">
+            </div>
+            <div class="input-group">
+                <label for="current-value">现在值</label>
+                <input type="number" id="current-value">
+            </div>
+            <button type="button" id="calculate-button">计算</button>
+            <div id="result">
+                <h2>结果</h2>
+                <p id="result-value"></p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>历史记录</h2>
+            <div id="history">
+                <ul id="history-list">
+                    <!-- 历史记录项将会在此处动态添加 -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

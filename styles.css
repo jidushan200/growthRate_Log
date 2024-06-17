@@ -1,0 +1,144 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+}
+
+.main-container {
+	display: flex;
+	width: 80%;
+	max-width: 1200px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.left-panel,
+.right-panel {
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.left-panel {
+	width: 40%;
+	border-right: 1px solid #ddd;
+}
+
+.right-panel {
+	width: 60%;
+}
+
+.input-group {
+	margin-bottom: 15px;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.input-group input {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #28a745;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #218838;
+}
+
+#result {
+	margin-top: 20px;
+}
+
+#result p {
+	font-size: 1.2em;
+	color: #333;
+}
+
+.right-panel h2 {
+	margin-bottom: 15px;
+}
+
+#history {
+	max-height: 550px;
+	overflow-y: auto;
+}
+
+/* 在 .history-item 容器上应用 flex 布局 */
+#history-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	/* 添加间隔 */
+	list-style-type: none;
+	padding: 0;
+}
+
+#history-list li {
+	flex: 1 1 calc(50% - 10px);
+	/* 每个历史记录项宽度为 50% 减去间隔 */
+	box-sizing: border-box;
+	/* 确保 padding 和 border 包含在元素的总宽度和高度内 */
+}
+
+#history-list li div {
+	margin-bottom: 5px;
+}
+
+#history-list li button {
+	padding: 5px 10px;
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#history-list li button:hover {
+	background-color: #c82333;
+}
+
+/* Additions and modifications start here */
+
+/* Ensure label and p are on the same line within .label-value-pair */
+.label-value-pair {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+
+.label-value-pair label {
+	font-weight: bold;
+	margin-right: 10px;
+	flex-shrink: 0;
+	width: 70px;
+}
+
+.label-value-pair p {
+	flex-grow: 1;
+	margin: 0;
+}
+
+/* 移除历史记录项的 padding */
+.history-item {
+	padding: 0;
+	margin-bottom: 3%; /* 添加一些下边距以分隔历史记录项 */
+}
+/* Additions and modifications end here */

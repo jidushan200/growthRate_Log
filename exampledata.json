@@ -1,0 +1,34 @@
+[
+    {
+        "institution": "银华纯债",
+        "startDate": "2017-07-03",
+        "endDate": "2024-06-18",
+        "pastValue": "0.836",
+        "currentValue": "1.163",
+        "growthRate": "39.11"
+    },
+    {
+        "institution": "汇添富纯债",
+        "startDate": "2016-12-30",
+        "endDate": "2024-06-18",
+        "pastValue": "0.642",
+        "currentValue": "0.846",
+        "growthRate": "31.78"
+    },
+    {
+        "institution": "工银纯债",
+        "startDate": "2017-03-31",
+        "endDate": "2024-06-18",
+        "pastValue": "0.728",
+        "currentValue": "1.049",
+        "growthRate": "44.09"
+    },
+    {
+        "institution": "中欧纯债",
+        "startDate": "2017-01-01",
+        "endDate": "2024-06-18",
+        "pastValue": "0.807",
+        "currentValue": "1.073",
+        "growthRate": "32.96"
+    }
+]
